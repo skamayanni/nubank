@@ -1,9 +1,9 @@
-<html lang="en" x-data="{ darkMode: false, mobileMenuOpen: false }"
+<html class="dark" lang="en" x-data="{ darkMode: true, mobileMenuOpen: false }"
     x-init="darkMode = localStorage.getItem('darkMode') === 'true' || (!localStorage.getItem('darkMode') &amp;&amp; window.matchMedia('(prefers-color-scheme: dark)').matches)"
     :class="{ 'dark': darkMode }" class="" style="--vh: 7.38px;" data-qb-installed="true">
 
 <head>
-    <title>Home - Nubank</title>
+    <title>Home - Citadel Credit Union</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="GxDl8BOfpU5CWtyZudQ5pGAJAV3H3kDYThmtR0Dr">
@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-title" content="">
     <meta name="application-name" content="">
     <meta name="description"
-        content="Swift and Secure Money Transfer to any UK bank account will become a breeze with Nubank.">
+        content="Swift and Secure Money Transfer to any UK bank account will become a breeze with citadel.">
     <link rel="shortcut icon" href="  storage/app/public/photos/67f8B4B6bLXzuKmE5jbgfcp8efEKi6zEmJ5wjZoW.png">
 
     <!-- Dark mode initialization -->
@@ -22,9 +22,6 @@
         const isDarkMode = localStorage.getItem('darkMode') === 'true' ||
             (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
-        if (isDarkMode) {
-            document.documentElement.classList.add('dark');
-        }
     </script>
 
 
@@ -399,13 +396,13 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Nubank">
+    <meta name="application-name" content="citadel">
     <link rel="icon" sizes="512x512" href="/images/icons/icon-512x512.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Nubank">
+    <meta name="apple-mobile-web-app-title" content="citadel">
     <link rel="apple-touch-icon" href="/images/icons/icon-512x512.png">
 
 
@@ -7539,25 +7536,11 @@
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-25 lg:h-28">
+
                 <!-- Logo with glow effect -->
                 <div class="flex items-center group">
-                    <a class="chakra-link css-3hrgac" aria-label="Logo Nubank com link para Home" href="./index.html"
-                        _mstaria-label="637559"><svg width="44px" height="24px" viewBox="0 0 44 24" fill="none">
-                            <g>
-                                <path id="Vector"
-                                    d="M0.0243654 9.87682C-0.0304567 10.9469 0.0243654 12.042 0.0243654 13.1171V23.4431H5.83551V13.9822C5.83551 11.0319 5.81557 8.41669 5.83551 7.88164C5.94515 5.33141 6.64289 3.65626 7.95364 2.29613C7.85894 2.29613 7.7493 2.28613 7.65461 2.28613C4.82379 2.28613 2.16741 3.90628 0.8766 6.40651C0.293492 7.51161 0.0891551 8.69171 0.0243654 9.88182V9.87682Z"
-                                    fill="currentColor"></path>
-                                <path id="Vector_2"
-                                    d="M13.3499 0C11.177 0 9.323 0.845077 7.9375 2.29521C12.2635 2.29521 15.0743 5.23547 15.2239 9.9109C15.2538 10.981 15.2687 16.7315 15.2687 16.7315V23.4471H21.0799V14.3763C21.0799 11.6311 21.0998 9.26084 20.9054 7.62069C20.3771 3.06028 17.5712 0.00500045 13.3499 0.00500045V0Z"
-                                    fill="currentColor"></path>
-                                <path id="Vector_3"
-                                    d="M43.9757 14.1248C44.0305 13.0547 43.9757 11.9596 43.9757 10.8845V0.558594H38.1645V10.0195C38.1645 12.9697 38.1844 15.585 38.1645 16.12C38.0549 18.6702 37.3571 20.3454 36.0464 21.7055C36.1411 21.7055 36.2507 21.7155 36.3454 21.7155C39.1762 21.7155 41.8326 20.0954 43.1234 17.5951C43.7065 16.49 43.9109 15.3199 43.9757 14.1198V14.1248Z"
-                                    fill="currentColor"></path>
-                                <path id="Vector_4"
-                                    d="M30.6536 24.0007C32.8265 24.0007 34.6805 23.1556 36.066 21.7055C31.74 21.7055 28.9291 18.7652 28.7796 14.0898C28.7497 13.0197 28.7248 10.3595 28.7248 7.2692V0.558594L22.9137 0.568595V9.63942C22.9137 12.3847 22.8937 14.7549 23.0881 16.395C23.6264 20.9554 26.4372 24.0007 30.6536 24.0007Z"
-                                    fill="currentColor"></path>
-                            </g>
-                        </svg></a>
+
+                    <img src="img/citadel.jpg" alt="Concora Credit Union" class="h-20 w-auto">
                 </div>
 
                 <!-- Desktop Navigation with modern styling -->
@@ -7590,27 +7573,27 @@
                         <div
                             class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                             <div class="p-2">
-                                <a href="./Nu.html"
+                                <a href="./citadel.html"
                                     class="flex items-center px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/30 rounded-xl transition-all duration-300">
                                     <i class="fa-solid fa-user mr-3 text-primary-500"></i>
                                     Personal Banking
                                 </a>
-                                <a href="./Nu.html"
+                                <a href="./citadel.html"
                                     class="flex items-center px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/30 rounded-xl transition-all duration-300">
                                     <i class="fa-solid fa-briefcase mr-3 text-blue-500"></i>
                                     Business Banking
                                 </a>
-                                <a href="./Nu.html"
+                                <a href="./citadel.html"
                                     class="flex items-center px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/30 rounded-xl transition-all duration-300">
                                     <i class="fa-solid fa-handshake mr-3 text-green-500"></i>
                                     Loans &amp; Credit
                                 </a>
-                                <a href="./Nu.html"
+                                <a href="./citadel.html"
                                     class="flex items-center px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/30 rounded-xl transition-all duration-300">
                                     <i class="fa-solid fa-credit-card mr-3 text-purple-500"></i>
                                     Cards
                                 </a>
-                                <a href="/Nu.html"
+                                <a href="/citadel.html"
                                     class="flex items-center px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/30 rounded-xl transition-all duration-300">
                                     <i class="fa-solid fa-hand-holding-dollar mr-3 text-orange-500"></i>
                                     Grants &amp; Aid
@@ -7639,6 +7622,101 @@
                         <i class="fa-solid fa-moon text-lg group-hover:rotate-12 transition-transform duration-300"
                             x-show="!darkMode"></i>
                     </button>
+
+                    <div class="language-dropdown desktop-only">
+                        <button class="language-btn" onclick="toggleLanguages(this,event)">
+                            🌐 <span class="currentLanguage">English</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+
+                        <div class="language-menu">
+
+                            <div onclick="translateLanguage(this,event,'en','English')">🇺🇸 English</div>
+
+                            <div onclick="translateLanguage(this,event,'es','Español')">🇪🇸 Español</div>
+
+                            <div onclick="translateLanguage(this,event,'fr','Français')">🇫🇷 Français</div>
+
+                            <div onclick="translateLanguage(this,event,'de','Deutsch')">🇩🇪 Deutsch</div>
+
+                            <div onclick="translateLanguage(this,event,'it','Italiano')">🇮🇹 Italiano</div>
+
+                            <div onclick="translateLanguage(this,event,'pt','Português')">🇵🇹 Português</div>
+
+                            <div onclick="translateLanguage(this,event,'ru','Русский')">🇷🇺 Русский</div>
+
+                            <div onclick="translateLanguage(this,event,'ar','العربية')">🇸🇦 العربية</div>
+
+                            <div onclick="translateLanguage(this,event,'zh-CN','中文')">🇨🇳 中文</div>
+
+                            <div onclick="translateLanguage(this,event,'ja','日本語')">🇯🇵 日本語</div>
+
+                        </div>
+                    </div>
+
+                    <!-- Hidden Google Translator -->
+                    <div id="google_translate_element" style="display:none;"></div>
+
+                    <style>
+                        .language-dropdown {
+                            position: relative;
+                            margin: 0 15px;
+                        }
+
+                        .language-btn {
+                            background: #0a2948;
+                            color: #fff;
+                            border: 1px solid rgba(255, 255, 255, .2);
+                            padding: 10px 16px;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            font-size: 14px;
+                            transition: .25s;
+                        }
+
+                        .language-btn:hover {
+                            background: #12395d;
+                        }
+
+                        .language-menu {
+                            display: none;
+                            position: absolute;
+                            top: 48px;
+                            right: 0;
+                            width: 220px;
+                            background: #0f172a;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            box-shadow: 0 15px 40px rgba(0, 0, 0, .2);
+                            z-index: 9999;
+                        }
+
+                        .language-menu.show {
+                            display: block;
+                        }
+
+                        .language-menu div {
+                            padding: 13px 18px;
+                            cursor: pointer;
+                            transition: .2s;
+                            font-size: 14px;
+                        }
+
+                        .language-menu div:hover {
+                            background: #f4f7fb;
+                        }
+
+                        .goog-te-banner-frame.skiptranslate {
+                            display: none !important;
+                        }
+
+                        body {
+                            top: 0 !important;
+                        }
+                    </style>
 
 
                 </div>
@@ -7702,27 +7780,27 @@
                             :class="{ 'rotate-180': servicesOpen }"></i>
                     </button>
                     <div x-show="servicesOpen" x-transition="" class="ml-8 space-y-1" style="display: none;">
-                        <a href="./Nu.html"
+                        <a href="./citadel.html"
                             class="flex items-center px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 dark:hover:from-primary-900/30 dark:hover:to-primary-800/30">
                             <i class="fa-solid fa-user mr-3 text-primary-400"></i>
                             Personal Banking
                         </a>
-                        <a href="./Nu.html"
+                        <a href="./citadel.html"
                             class="flex items-center px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 dark:hover:from-primary-900/30 dark:hover:to-primary-800/30">
                             <i class="fa-solid fa-briefcase mr-3 text-blue-400"></i>
                             Business Banking
                         </a>
-                        <a href="./Nu.html"
+                        <a href="./citadel.html"
                             class="flex items-center px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 dark:hover:from-primary-900/30 dark:hover:to-primary-800/30">
                             <i class="fa-solid fa-handshake mr-3 text-green-400"></i>
                             Loans &amp; Credit
                         </a>
-                        <a href="./Nu.html"
+                        <a href="./citadel.html"
                             class="flex items-center px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 dark:hover:from-primary-900/30 dark:hover:to-primary-800/30">
                             <i class="fa-solid fa-credit-card mr-3 text-purple-400"></i>
                             Cards
                         </a>
-                        <a href="./Nu.html"
+                        <a href="./citadel.html"
                             class="flex items-center px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-all duration-300 rounded-xl hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 dark:hover:from-primary-900/30 dark:hover:to-primary-800/30">
                             <i class="fa-solid fa-hand-holding-dollar mr-3 text-orange-400"></i>
                             Grants &amp; Aid
@@ -7749,6 +7827,38 @@
                         class="fa-solid fa-chevron-right ml-auto text-xs opacity-0 group-hover:opacity-100 transition-all duration-300"></i>
                 </a>
 
+                <!-- Mobile Language Selector -->
+                <div class="pt-4 mt-4 border-t border-primary-700/50">
+                    <div class="language-dropdown">
+
+                        <button class="language-btn" onclick="toggleLanguages(this,event)">
+                            🌐 <span class="currentLanguage">English</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+
+                        <div class="language-menu">
+
+                            <div onclick="translateLanguage(this,event,'en','English')">🇺🇸 English</div>
+
+                            <div onclick="translateLanguage(this,event,'es','Español')">🇪🇸 Español</div>
+
+                            <div onclick="translateLanguage(this,event,'fr','Français')">🇫🇷 Français</div>
+
+                            <div onclick="translateLanguage(this,event,'de','Deutsch')">🇩🇪 Deutsch</div>
+
+                            <div onclick="translateLanguage(this,event,'it','Italiano')">🇮🇹 Italiano</div>
+
+                            <div onclick="translateLanguage(this,event,'pt','Português')">🇵🇹 Português</div>
+
+                            <div onclick="translateLanguage(this,event,'zh-CN','中文')">🇨🇳 中文</div>
+
+                            <div onclick="translateLanguage(this,event,'ja','日本語')">🇯🇵 日本語</div>
+
+                        </div>
+
+                    </div>
+                </div>
+
                 <!-- Enhanced Dark Mode Toggle for Mobile -->
                 <div class="pt-4 mt-4 border-t border-primary-700/50">
 
@@ -7768,6 +7878,8 @@
                             class="fa-solid fa-chevron-right ml-auto text-xs opacity-0 group-hover:opacity-100 transition-all duration-300"></i>
                     </button>
                 </div>
+
+
             </div>
         </div>
     </nav>
@@ -7777,7 +7889,7 @@
         class="relative h-screen min-h-[500px] lg:min-h-[600px] flex items-center justify-center overflow-hidden bg-primary-900">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="./img/1754405239-mulher-cafeteria-pagando-com-cartao-nubank_1920x1080.avif " alt=" " class="w-full h-full object-cover object-[75%_25%] md:object-center"
+            <img src="img/2geda.jpeg" alt=" " class="w-full h-full object-cover object-[75%_25%] md:object-center"
                 loading="eager" onload="this.style.opacity=1" style="opacity: 1; transition: opacity 0.3s;">
             <!-- Mobile Fallback Background -->
             <div class="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 lg:hidden">
@@ -7802,7 +7914,7 @@
                     </div>
 
                     <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 lg:mb-6">
-                        Nubank
+                        Citadel Credit Union
                     </h1>
 
                     <!-- Mobile Tagline -->
@@ -7837,12 +7949,12 @@
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-3 lg:gap-4 mb-8 lg:mb-12">
-                        <a href="./Nu.html"
-                            class="inline-flex items-center justify-center px-6 lg:px-8 py-3 lg:py-4 bg-purple-700 hover:bg-purple-600  text-white font-semibold rounded-xl lg:rounded-2xl transition-all duration-300 shadow-2xl shadow-primary-600/30 hover:shadow-primary-600/50 hover:-translate-y-1 hover:scale-105">
+                        <a href="#"
+                            class="inline-flex items-center justify-center px-6 lg:px-8 py-3 lg:py-4 bg-blue-900 hover:bg-blue-600  text-white font-semibold rounded-xl lg:rounded-2xl transition-all duration-300 shadow-2xl shadow-primary-600/30 hover:shadow-primary-600/50 hover:-translate-y-1 hover:scale-105">
                             <i class="fa-solid fa-user-plus mr-2 lg:mr-3"></i>
                             Open Account Today
                         </a>
-                        <a href="./Nu.html"
+                        <a id="" href="citadel.html"
                             class="inline-flex items-center justify-center px-6 lg:px-8 py-3 lg:py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 backdrop-blur-sm text-white font-semibold rounded-xl lg:rounded-2xl transition-all duration-300 border border-white/30 hover:border-white/50 hover:-translate-y-1">
                             <i class="fa-solid fa-sign-in-alt mr-2 lg:mr-3"></i>
                             Login to Banking
@@ -7885,7 +7997,7 @@
 
                     <!-- Branch Hours Card -->
                     <div
-                        class="bg-purple-700 hover::bg-white/20 transition-all duration-300 rounded-2xl p-6 text-white shadow-2xl hover:shadow-teal-500/30 hover:-translate-y-2 group">
+                        class="bg-blue-900 hover::bg-white/20 transition-all duration-300 rounded-2xl p-6 text-white shadow-2xl hover:shadow-teal-500/30 hover:-translate-y-2 group">
                         <div class="flex items-center justify-between">
                             <div>
                                 <p class="text-teal-100 text-sm font-medium mb-1">BRANCH HOURS</p>
@@ -7943,13 +8055,13 @@
             <!-- Section Header -->
             <div class="text-center mb-12 lg:mb-16">
                 <div
-                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-100 to-primary-200 dark:from-primary-900/50 dark:to-primary-800/50 text-primary-700 dark:text-primary-300 rounded-full text-sm font-semibold mb-4 shadow-lg backdrop-blur-sm border border-primary-200/50 dark:border-primary-700/50">
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-200 to-primary-400 dark:from-primary-900/50 dark:to-primary-900/50 text-primary-800 dark:text-primary-400 rounded-full text-sm font-semibold mb-4 shadow-lg backdrop-blur-sm border border-primary-200/50 dark:border-primary-700/50">
                     <i class="fa-solid fa-chart-line mr-2 animate-pulse"></i>
-                    Nubank Rates
+                    citadel Rates
                 </div>
                 <h2
                     class="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-gray-900 via-primary-800 to-gray-900 dark:from-white dark:via-primary-300 dark:to-white bg-clip-text text-transparent mb-4">
-                    Nubank Member Care
+                    citadel Member Care
                 </h2>
                 <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                     Discover competitive rates designed to help your money grow faster
@@ -8009,7 +8121,7 @@
                                 3.65%</div>
                             <div class="text-sm text-gray-500 dark:text-gray-400 mb-3 font-medium">APY*</div>
                             <div class="font-bold text-gray-900 dark:text-white mb-2 text-sm">18 MONTH CERTIFICATE</div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Nubank
+                            <div class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">citadel
                                 Certificate Rates</div>
                         </div>
                         <div class="mt-4 text-center">
@@ -8037,16 +8149,16 @@
                         </div>
                         <div class="text-center">
                             <div
-                                class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent mb-2">
+                                class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 to-pink-600 dark:from-blue-400 dark:to-pink-400 bg-clip-text text-transparent mb-2">
                                 4.00%</div>
                             <div class="text-sm text-gray-500 dark:text-gray-400 mb-3 font-medium">APR*</div>
                             <div class="font-bold text-gray-900 dark:text-white mb-2 text-sm">CREDIT CARDS</div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Nubank
+                            <div class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">citadel
                                 Credit Card Rates</div>
                         </div>
                         <div class="mt-4 text-center">
                             <span
-                                class="inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-purple-100 to-purple-200 dark:from-purple-900/30 dark:to-purple-800/30 text-purple-700 dark:text-purple-400 rounded-full text-xs font-bold shadow-sm">
+                                class="inline-flex items-center px-3 py-1.5 bg-gradient-to-r from-blue-100 to-blue-200 dark:from-blue-900/30 dark:to-blue-800/30 text-blue-700 dark:text-blue-400 rounded-full text-xs font-bold shadow-sm">
                                 <i class="fa-solid fa-credit-card mr-1"></i>
                                 CREDIT
                             </span>
@@ -8073,7 +8185,7 @@
                                 15.49%</div>
                             <div class="text-sm text-gray-500 dark:text-gray-400 mb-3 font-medium">APR*</div>
                             <div class="font-bold text-gray-900 dark:text-white mb-2 text-sm">LOANS</div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">Nubank
+                            <div class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">citadel
                                 Standard Loan Rates</div>
                         </div>
                         <div class="mt-4 text-center">
@@ -8102,8 +8214,8 @@
 
     <!-- Services Section -->
     <section
-        class="relative py-16 lg:py-20 bg-gradient-to-br from-purple-900 via-purple-700 to-primary-800 dark:from-primary-800 dark:via-primary-900 dark:to-gray-900 overflow-hidden">
-         <!-- Background Effects -->
+        class="relative py-16 lg:py-20 bg-gradient-to-br from-blue-900 via-blue-900 to-primary-800 dark:from-primary-800 dark:via-primary-900 dark:to-gray-900 overflow-hidden">
+        <!-- Background Effects -->
         <div class="absolute inset-0">
             <div
                 class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent_50%)]">
@@ -8218,7 +8330,7 @@
                     </div>
                 </div>
 
-                <!-- About Nubank -->
+                <!-- About citadel -->
                 <div
                     class="group relative bg-white/5 backdrop-blur-sm rounded-2xl p-6 text-center transition-all duration-500 hover:bg-white/10 hover:-translate-y-2 border border-white/10 hover:border-white/20 hover:shadow-2xl hover:shadow-white/10">
                     <div
@@ -8226,7 +8338,7 @@
                         <i class="fa-solid fa-info-circle text-2xl text-white group-hover:text-primary-100"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3 group-hover:text-primary-100 transition-colors">About
-                        Nubank</h3>
+                        citadel</h3>
                     <p class="text-primary-100 leading-relaxed group-hover:text-white/90 transition-colors">Learn more
                         about our commitment to exceptional banking services and community support.</p>
                     <div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -8314,8 +8426,8 @@
                         </div>
                     </div>
 
-                    <a href="  register"
-                        class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-bold rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-primary-500/25 hover:-translate-y-1 hover:scale-105 group">
+                    <a href="#"
+                        class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-800 hover:to-blue-900 text-white font-bold rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-primary-500/25 hover:-translate-y-1 hover:scale-105 group">
                         <i class="fa-solid fa-arrow-right mr-3 group-hover:translate-x-1 transition-transform"></i>
                         Open Account Now
                     </a>
@@ -8342,7 +8454,7 @@
 
     <!-- PWA Download Section -->
     <section
-        class="relative py-16 lg:py-20 bg-gradient-to-br from-purple-900 via-purple-700 to-primary-800 dark:from-primary-800 dark:via-primary-900 dark:to-gray-900 overflow-hidden">
+        class="relative py-16 lg:py-20 bg-gradient-to-br from-blue-900 via-blue-900 to-primary-900 dark:from-primary-900 dark:via-primary-900 dark:to-gray-900 overflow-hidden">
         <!-- Background Effects -->
         <div class="absolute inset-0">
             <div
@@ -8375,7 +8487,7 @@
                     </div>
 
                     <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                        Banking Made Simple with Our Nubank App
+                        Banking Made Simple with Our citadel App
                     </h2>
 
                     <p class="text-xl text-primary-100 mb-8 leading-relaxed">
@@ -8435,7 +8547,7 @@
                         <button id="installPWA"
                             class="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-primary-700 font-bold rounded-2xl transition-all duration-300 shadow-2xl hover:shadow-white/20 hover:-translate-y-1 hover:scale-105 transform">
                             <i class="fa-solid fa-download mr-3 text-lg"></i>
-                            Install Nubank App
+                            Install citadel App
                         </button>
 
                         <a href="index.html"
@@ -8477,12 +8589,12 @@
                         <!-- Phone Screen -->
                         <div class="w-full h-full bg-white rounded-[2.5rem] overflow-hidden shadow-inner relative">
                             <!-- Status Bar -->
-                            <div class="bg-purple-600 h-12 flex items-center justify-between px-6 text-white text-sm">
+                            <div class="bg-blue-900 h-12 flex items-center justify-between px-6 text-white text-sm">
                                 <div class="flex items-center space-x-1">
                                     <div class="w-1 h-1 bg-white rounded-full"></div>
                                     <div class="w-1 h-1 bg-white rounded-full"></div>
                                     <div class="w-1 h-1 bg-white rounded-full"></div>
-                                    <span class="ml-2 font-medium">Nu Bank</span>
+                                    <span class="ml-2 font-medium">Citadel Credit Union</span>
                                 </div>
                                 <div class="flex items-center space-x-1">
                                     <i class="fa-solid fa-wifi text-xs"></i>
@@ -8524,8 +8636,7 @@
                                 </div>
 
                                 <!-- Balance Card -->
-                                <div
-                                    class="bg-gradient-to-r from-green-700 to-green-900 rounded-2xl p-4 text-white">
+                                <div class="bg-gradient-to-r from-green-700 to-green-900 rounded-2xl p-4 text-white">
                                     <p class="text-primary-100 text-xs mb-1">Available Balance</p>
                                     <h3 class="text-2xl font-bold mb-2">€12,847.50</h3>
                                     <div class="flex justify-between items-center">
@@ -8689,7 +8800,7 @@
                     <h3 class="font-bold text-gray-900 dark:text-white mb-2 text-sm">Email Support</h3>
                     <p class="text-gray-600 dark:text-gray-300 text-xs">
                         Response within 24hrs<br>
-                        customer@Nubank.com
+                        customer@citadel.com
                     </p>
                 </div>
 
@@ -8702,8 +8813,8 @@
                     <p class="text-gray-600 dark:text-gray-300 text-xs">
                         16.236.120/0001-58.<br>
                         705 Grand Ave, Spencer,<br>
-                         IA 51301<br>
-                        
+                        IA 51301<br>
+
                     </p>
                 </div>
             </div>
@@ -8742,26 +8853,10 @@
                             <div
                                 class="absolute inset-0 bg-white/20 rounded-2xl blur-lg group-hover:bg-white/30 transition-all duration-300">
                             </div>
-                             <!-- Logo with glow effect -->
-                <div class="flex items-center group">
-                    <a class="chakra-link css-3hrgac" aria-label="Logo Nubank com link para Home" href="/"
-                        _mstaria-label="637559"><svg width="44px" height="24px" viewBox="0 0 44 24" fill="none">
-                            <g>
-                                <path id="Vector"
-                                    d="M0.0243654 9.87682C-0.0304567 10.9469 0.0243654 12.042 0.0243654 13.1171V23.4431H5.83551V13.9822C5.83551 11.0319 5.81557 8.41669 5.83551 7.88164C5.94515 5.33141 6.64289 3.65626 7.95364 2.29613C7.85894 2.29613 7.7493 2.28613 7.65461 2.28613C4.82379 2.28613 2.16741 3.90628 0.8766 6.40651C0.293492 7.51161 0.0891551 8.69171 0.0243654 9.88182V9.87682Z"
-                                    fill="currentColor"></path>
-                                <path id="Vector_2"
-                                    d="M13.3499 0C11.177 0 9.323 0.845077 7.9375 2.29521C12.2635 2.29521 15.0743 5.23547 15.2239 9.9109C15.2538 10.981 15.2687 16.7315 15.2687 16.7315V23.4471H21.0799V14.3763C21.0799 11.6311 21.0998 9.26084 20.9054 7.62069C20.3771 3.06028 17.5712 0.00500045 13.3499 0.00500045V0Z"
-                                    fill="currentColor"></path>
-                                <path id="Vector_3"
-                                    d="M43.9757 14.1248C44.0305 13.0547 43.9757 11.9596 43.9757 10.8845V0.558594H38.1645V10.0195C38.1645 12.9697 38.1844 15.585 38.1645 16.12C38.0549 18.6702 37.3571 20.3454 36.0464 21.7055C36.1411 21.7055 36.2507 21.7155 36.3454 21.7155C39.1762 21.7155 41.8326 20.0954 43.1234 17.5951C43.7065 16.49 43.9109 15.3199 43.9757 14.1198V14.1248Z"
-                                    fill="currentColor"></path>
-                                <path id="Vector_4"
-                                    d="M30.6536 24.0007C32.8265 24.0007 34.6805 23.1556 36.066 21.7055C31.74 21.7055 28.9291 18.7652 28.7796 14.0898C28.7497 13.0197 28.7248 10.3595 28.7248 7.2692V0.558594L22.9137 0.568595V9.63942C22.9137 12.3847 22.8937 14.7549 23.0881 16.395C23.6264 20.9554 26.4372 24.0007 30.6536 24.0007Z"
-                                    fill="currentColor"></path>
-                            </g>
-                        </svg></a>
-                </div>
+                            <!-- Logo with glow effect -->
+                            <div class="flex items-center group">
+                                <img src="img/citadel.jpg" alt="Concora Credit Union" class="h-20 w-auto">
+                            </div>
                         </div>
                     </div>
                     <p class="text-primary-100 mb-6 text-sm leading-relaxed">
@@ -8850,14 +8945,14 @@
                         Services
                     </h4>
                     <ul class="space-y-3">
-                        <li><a href="./Nu.html"
+                        <li><a href="./citadel.html"
                                 class="group flex items-center text-primary-100 hover:text-white transition-all duration-300 text-sm">
                                 <i
                                     class="fa-solid fa-chevron-right text-xs mr-3 text-teal-400 group-hover:translate-x-1 transition-transform duration-300"></i>
                                 <span class="group-hover:translate-x-1 transition-transform duration-300">Personal
                                     Banking</span>
                             </a></li>
-                        <li><a href="./Nu.html"
+                        <li><a href="./citadel.html"
                                 class="group flex items-center text-primary-100 hover:text-white transition-all duration-300 text-sm">
                                 <i
                                     class="fa-solid fa-chevron-right text-xs mr-3 text-teal-400 group-hover:translate-x-1 transition-transform duration-300"></i>
@@ -8883,35 +8978,35 @@
                 <!-- Member Services -->
                 <div>
                     <h4 class="font-bold mb-6 text-white flex items-center">
-                        <div class="w-1 h-6 bg-gradient-to-b from-purple-400 to-purple-600 rounded-full mr-3"></div>
+                        <div class="w-1 h-6 bg-gradient-to-b from-blue-400 to-blue-600 rounded-full mr-3"></div>
                         Member Services
                     </h4>
                     <ul class="space-y-3">
                         <li><a href="./index.html"
                                 class="group flex items-center text-primary-100 hover:text-white transition-all duration-300 text-sm">
                                 <i
-                                    class="fa-solid fa-chevron-right text-xs mr-3 text-purple-400 group-hover:translate-x-1 transition-transform duration-300"></i>
+                                    class="fa-solid fa-chevron-right text-xs mr-3 text-blue-400 group-hover:translate-x-1 transition-transform duration-300"></i>
                                 <span class="group-hover:translate-x-1 transition-transform duration-300">Online
                                     Banking</span>
                             </a></li>
                         <li><a href="#"
                                 class="group flex items-center text-primary-100 hover:text-white transition-all duration-300 text-sm">
                                 <i
-                                    class="fa-solid fa-chevron-right text-xs mr-3 text-purple-400 group-hover:translate-x-1 transition-transform duration-300"></i>
+                                    class="fa-solid fa-chevron-right text-xs mr-3 text-blue-400 group-hover:translate-x-1 transition-transform duration-300"></i>
                                 <span class="group-hover:translate-x-1 transition-transform duration-300">Mobile
                                     App</span>
                             </a></li>
                         <li><a href="#"
                                 class="group flex items-center text-primary-100 hover:text-white transition-all duration-300 text-sm">
                                 <i
-                                    class="fa-solid fa-chevron-right text-xs mr-3 text-purple-400 group-hover:translate-x-1 transition-transform duration-300"></i>
+                                    class="fa-solid fa-chevron-right text-xs mr-3 text-blue-400 group-hover:translate-x-1 transition-transform duration-300"></i>
                                 <span class="group-hover:translate-x-1 transition-transform duration-300">ATM
                                     Locations</span>
                             </a></li>
                         <li><a href="#"
                                 class="group flex items-center text-primary-100 hover:text-white transition-all duration-300 text-sm">
                                 <i
-                                    class="fa-solid fa-chevron-right text-xs mr-3 text-purple-400 group-hover:translate-x-1 transition-transform duration-300"></i>
+                                    class="fa-solid fa-chevron-right text-xs mr-3 text-blue-400 group-hover:translate-x-1 transition-transform duration-300"></i>
                                 <span class="group-hover:translate-x-1 transition-transform duration-300">Security
                                     Center</span>
                             </a></li>
@@ -8924,7 +9019,7 @@
                 <div class="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
                     <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
                         <p class="text-primary-100 text-sm">
-                            © 2025 Nubank. All rights reserved.
+                            © 2025 citadel. All rights reserved.
                         </p>
 
                     </div>
@@ -9032,7 +9127,7 @@
                     <h4 class="font-semibold text-gray-900 dark:text-white">Chrome Installation:</h4>
                     <ol class="list-decimal list-inside space-y-1 text-sm text-gray-600 dark:text-gray-300">
                         <li>Click the menu (⋮) in the top right corner</li>
-                        <li>Select "Install Nubank App"</li>
+                        <li>Select "Install citadel App"</li>
                         <li>Click "Install" in the popup</li>
                     </ol>
                 </div>
@@ -9072,7 +9167,7 @@
             }
 
             // Show modal with instructions
-            showModal('Install Nubank App', instructions);
+            showModal('Install citadel App', instructions);
         }
 
         // Show success message
@@ -9083,7 +9178,7 @@
                     <i class="fa-solid fa-check text-2xl text-green-600"></i>
                 </div>
                 <p class="text-gray-600 dark:text-gray-300">
-                    Nubank App has been installed successfully! You can now access your banking app directly from your home screen.
+                    citadel App has been installed successfully! You can now access your banking app directly from your home screen.
                 </p>
             </div>
         `);
@@ -9459,7 +9554,7 @@
 
     <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
-    <!-- Place this before </body> in your HTML -->
+    <!-- Place this before /body in your HTML -->
     <script>
         // Disable right-click
         document.addEventListener("contextmenu", function (e) {
@@ -9501,7 +9596,49 @@
         });
     </script>
 
+    <!-- <script>
+        const projectId = "n7yp6kct"
+        const dataset = "production"
 
+        async function loadHomepage() {
+            const query = encodeURIComponent(`*[_type=="homepage"][0]{loginText, loginLink}`)
+            const url = `https://${projectId}.api.sanity.io/v2023-05-03/data/query/${dataset}?query=${query}`
+
+            const res = await fetch(url)
+            const data = await res.json()
+            const content = data.result
+
+            const link = document.getElementById("login-link")
+            link.textContent = content.loginText
+            link.href = content.loginLink
+        }
+
+        loadHomepage()
+
+        async function loadNav() {
+            const query = encodeURIComponent(`*[_type=="navigation"][0]{links}`)
+            const url = `https://${projectId}.api.sanity.io/v2023-05-03/data/query/${dataset}?query=${query}`
+
+            const res = await fetch(url)
+            const data = await res.json()
+
+            const nav = document.getElementById("nav-menu")
+            nav.innerHTML = ""
+
+            data.result.links.forEach(link => {
+                const a = document.createElement("a")
+                a.href = link.url
+                a.textContent = link.label
+                nav.appendChild(a)
+            })
+        }
+    </script> -->
+
+
+
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="language.js"></script>
 
 </body>
 
