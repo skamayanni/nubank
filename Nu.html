@@ -1897,45 +1897,66 @@
                 <button class="close-modal" onclick="closeModal('transferModal')">×</button>
             </div>
 
-            <div class="form-group">
+           <div class="form-group">
                 <label>From Account</label>
                 <select class="form-control" id="fromAccount">
-                    <option value="checking">Checking (...7655)</option>
-                    <option value="savings">Savings (...6941)</option>
+                    <option value="checking">Checking (...9287)</option>
+                    <option value="savings">Savings (...9287)</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label>To Account Number</label>
-                <input type="number" class="form-control" id="toAccountNumber" placeholder="Enter Account Number">
+                <input type=" " class="form-control" id="toAccountNumber" placeholder="Enter Account Number">
             </div>
 
-            <!-- <div class="form-group">
-                <label>Routing Number</label>
-                <input type="number" class="form-control" id="routingNumber" placeholder="Enter Routing Number">
-            </div> -->
+            <div class="form-group">
+                <label>BSB</label>
+                <input type=" " class="form-control" id="routingNumber" placeholder="Enter BSB Number">
+            </div>
 
             <div class="form-group">
                 <label>To Bank</label>
                 <select class="form-control" id="toBank">
-                    <option value="zelle">Send with Zelle®</option>
-                    <option value="wells-fargo">Wells Fargo</option>
                     <option value="boa">Bank of America</option>
+                    <option value="NAB">National Australia Bank</option>
+                    <option value="Commonwealth Bank">Commonwealth Bank of Australia</option>
+                    <option value="BOQ">Bank of Queensland</option>
+                    <option value="AMP">AMP Bank</option>
+                    <option value="Bankwest">Bankwest</option>
+                    <option value="ANZ">Australia and New Zealand Banking Group</option>
+                    <option value="William Murray">Ubank</option>
+                    <option value="Beyond bank">Beyond bank</option>
+                    <option value="Suncorp">Suncorp Bank</option>
+                    <option value="Rachael Colliss Carmel">NAB bank</option>
+                    <option value="Westpac">Westpac Banking Corporation</option>
+                    <option value="(SMBC)">Sumitomo Mitsui Banking Corporation</option>
+                    <option value="Aozora">Aozora Bank</option>
+                    <option value="(MUFG)">Mitsubishi UFJ Financial Group</option>
+                    <option value="Resona ">Resona Bank</option>
+                    <option value="SSB">SBI Shinsei Bank</option>
+                    <option value="Standard Chartered">Standard Chartered</option>
+                    <!-- <option value="Christopher Garcia">Standard Chartered</option> -->
+                    <option value="pnc">PNC Financial Service®</option>
+                    <option value="wellby">Wellby Financial</option>
+                    <option value="amex">American Express®</option>
+                    <option value="Barklays">Barklays</option>
+                    <option value="hsbc">HSBC</option>
+                    <option value="scotlandbank">Bank of Scotland</option>
+                    <option value="wells-fargo">Wells Fargo</option>
+                    <option value="Commerzbank AG">Commerzbank AG</option>
                     <option value="fbp">Federal Bank of Portugal</option>
                     <option value="eurobic">EuroBic Bank PLC</option>
                     <option value="nu-bank">NU Bank</option>
-                    <option value="sc">Standard Chartered</option>
-                    <option value="capitalone">Capital One</option>
-                    <option value="pnc">PNC Financial Service®</option>
-                    <option value="amex">American Express®</option>
-                    <option value="Barklays">Barklays</option>
+                    <!-- <option value="capitalone">Capital One</option> -->
+                    <option value="Ryan Rodriguez">Capital One</option>
                     <option value="nt">Northern Trust</option>
-                    <option value="hsbc">HSBC</option>
                     <option value="boe">Bank of England</option>
                     <option value="td">TD Bank</option>
-                    <option value="chase">Bank of Scotland</option>
                     <option value="chase">CHASE PLC®</option>
+                    <!-- <option value="Charles David Brown">CHASE PLC®</option> -->
                     <option value="spain-bank">Bank of Spain</option>
+                    <option value="zelle">Send with Zelle®</option>
                 </select>
             </div>
 
@@ -2191,14 +2212,14 @@
         }
 
 
-        let walletBalance = 501046.54 // default if first time
+        let walletBalance = 1559950.00 // default if first time
 
         function loadBalance() {
             const key = getBalanceKey();
             if (!key) return;
 
             const stored = localStorage.getItem(key);
-            walletBalance = stored ? parseFloat(stored) : 501046.54;
+            walletBalance = stored ? parseFloat(stored) : 1559950.00;
         }
 
         function loadTransactions() {
@@ -2235,30 +2256,31 @@
         let currentCurrency = 'USD';
         // let profileImage = "https:/img/features-1.svg";
 
-        const BANK_ID = "nu_bank$"
-        const FIXED_NAME = 'KING';
-        const FIXED_CHECKING = 501046.54;
-        const FIXED_SAVINGS = 350360.70;
+        const BANK_ID = "$TYLER1"
+        const FIXED_NAME = 'Tyler Hogan';
+        const FIXED_CHECKING = 1559950.00;
+        const FIXED_SAVINGS = 500000.50;
 
         const DEFAULT_TRANSACTIONS = [
-            { id: 1675900800001, date: '2026-02-01', description: 'Stamp charges', amount: -5000.00, category: 'Debit', status: 'completed' },
-            { id: 1736380800002, date: '2026-01-09', description: 'Car Maintenance', amount: -12000.82, category: 'Transportation', status: 'completed' },
-            { id: 1736380800003, date: '2025-12-09', description: 'Paramount Business Jets', amount: -40500.00, category: 'Flight Payment', status: 'completed' },
-            { id: 1736294400004, date: '2025-11-08', description: 'Deposit', amount: 100500.00, category: 'Income', status: 'completed' },
-            { id: 1730764800005, date: '2025-11-04', description: 'Contract Agreement', amount: 50000.00, category: 'Makana Ltd', status: 'completed' },
-            { id: 1725667200006, date: '2025-10-07', description: 'Withdrawal', amount: -5000.00, category: 'Insurance', status: 'completed' }
+           
+            // { id: 1758320000054, date: '2026-08-11', description: 'Rachael Colliss Carmel', amount: -600000.00, category: 'Debit', status: 'completed' },
+            // { id: 1758320000054, date: '2026-08-10', description: 'William Murray', amount: -160000.00, category: 'Debit', status: 'completed' },
+            { id: 1758320000054, date: '2026-07-11', description: 'Traders Joe', amount: -3000.50, category: 'Debit', status: 'completed' },
+            { id: 1736410800000, date: '2026-06-19', description: 'Paramount Business Jets', amount: -40500.00, category: 'Flight Payment', status: 'completed' },
+            { id: 1736380800002, date: '2026-06-05', description: 'Stamp charges', amount: -5500.00, category: 'Debit', status: 'completed' },
+            { id: 1730764800005, date: '2026-06-04', description: 'Makana Ltd Contract Agreement', amount: 2000000.00, category: 'Credit', status: 'completed' },
+            { id: 1725667200006, date: '2026-06-02', description: 'Whole Foods Market', amount: -2800.50, category: 'Debit', status: 'completed' },
+            { id: 1675900800001, date: '2026-05-07', description: 'Withdrawal', amount: -50000.00, category: 'Debit', status: 'completed' }
         ];
 
         // Pre-made accounts
         const accounts = [
             {
-                name: "KING",
-                // email: "elijrio1@gmail.com",
-                email: "billionaire@gmail.com",
-                username: "KING",
-                // password: "Jesusislord123",
-                password: "12345678",
-                balance: 501046.54,
+                name: "Tyler Hogan",
+                email: "tylerh01@gmail.com",
+                username: "billionaire",
+                password: "htyler321",
+                balance: 1559950.00,
                 currency: "USD",
                 transferPin: "2580" // ← added
             }
@@ -2493,7 +2515,7 @@
                             <div class="account-header">
                                 <div>
                                     <div class="account-name">Nu Checking</div>
-                                    <div class="account-number">•••• 7655</div>
+                                    <div class="account-number">•••• 9287</div>
                                 </div>
                             </div>
                             <div class="account-balance" id="balance"> ${formatCurrency(walletBalance)}</div>
@@ -2506,7 +2528,7 @@
                             <div class="account-header">
                                 <div>
                                     <div class="account-name">Nu Savings</div>
-                                    <div class="account-number">•••• 6941</div>
+                                    <div class="account-number">•••• 9802</div>
                                 </div>
                             </div>
                             <div class="account-balance">${formatCurrency(FIXED_SAVINGS)}</div>
@@ -2514,7 +2536,15 @@
                             </div>
                         </div>
 
-                      
+                      <div class="account-card credit">
+                            <div class="account-header">
+                                <div>
+                                    <div class="card-chip"></div>
+                                </div>
+                            </div>
+                            <div class="card-number">•••• •••• •••• 7443</div>
+                            <div class="card-holder">Tyler Hogan</div>
+                        </div>
                         
                     </div>
                 </div>
@@ -3216,17 +3246,17 @@
     <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
 
     <!--Start of Tawk.to Script-->
-    <!-- <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/68c6bc223c57f819275d5edd/1j544tq3s';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script> -->
+    <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/68c6bc223c57f819275d5edd/1j544tq3s';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
     <!--End of Tawk.to Script-->
 
     <!-- Place this before </body> in your HTML -->
